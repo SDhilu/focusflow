@@ -1,41 +1,51 @@
-# FocusFlow — Productivity Dashboard
+# FocusFlow
 
-A beginner-friendly React + Vite dashboard with a lavender-and-white UI. It uses plain CSS and LocalStorage (no backend).
+A personal productivity dashboard designed to help users organise tasks, build consistent habits, and monitor their progress through a clean, intuitive interface.
 
-## Requirements
-- Node.js (recommended: current LTS)
-- npm
+## Overview
 
-## Run it locally
-1. Extract this ZIP.
-2. Open a terminal in the `focusflow` folder.
-3. Install packages:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-5. Open the local URL printed by Vite (usually `http://localhost:5173`).
+FocusFlow is a frontend web application focused on productivity and personal organisation. It brings everyday planning and progress tracking into one interface, with an emphasis on usability and responsive design.
 
-## Build for production
+## Key Features
+
+- **Task Management** — organise and track daily tasks.
+- **Habit Tracking** — monitor personal routines and consistency.
+- **Progress Dashboard** — view productivity summaries and activity.
+- **Responsive Interface** — access the application across different screen sizes.
+
+## Technology Stack
+
+- **React** — component-based UI development
+- **Vite** — frontend development and build tooling
+- **CSS** — interface styling
+- **LocalStorage** — local data persistence
+
+## Getting Started
+
+Clone the repository:
+
 ```bash
-npm run build
-npm run preview
+git clone https://github.com/SDhilu/focusflow.git
+cd focusflow
 ```
 
-## Project structure
-- `src/App.jsx` — combines the dashboard components and shared state.
-- `src/styles.css` — all visual styling and responsive breakpoints.
-- `src/data/initialData.js` — starter tasks, habits, and weekly chart data.
-- `src/hooks/useLocalStorage.js` — reusable hook that saves state in the browser.
-- `src/components/` — separate components for sidebar, topbar, stats, chart, tasks, habits, and welcome banner.
+Install dependencies and start the development server:
 
-## How LocalStorage works
-Tasks are saved under `focusflow-tasks` and habits under `focusflow-habits` in the current browser. Data stays on this device/browser; it is not synced to another device. To reset the demo, open browser developer tools → Application/Storage → Local Storage and remove those two keys.
+```bash
+npm install
+npm run dev
+```
 
-## Notes
-- Weekly chart values and focus-time total are currently demo values.
-- Search filters tasks by title.
-- Settings/help buttons are simple demo interactions, not full pages.
+Open the local URL provided by Vite in your browser.
+
+## Future Improvements
+
+- Enhanced productivity analytics
+- More detailed habit and progress tracking
+- Improved accessibility and user experience
+
+## Author
+
+**Dhilushan Sivakumar**
+
+[GitHub](https://github.com/SDhilu)
